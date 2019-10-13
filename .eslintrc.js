@@ -27,4 +27,11 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'no-underscore-dangle': ['error', { allow: ['_id'] }],
   },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src',
+      },
+    },
+  },
 };
