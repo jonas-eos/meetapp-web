@@ -13,7 +13,7 @@ export default function RouteWrapper({
   path,
   exact,
 }) {
-  const signed = true;
+  const signed = false;
 
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
